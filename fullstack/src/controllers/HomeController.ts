@@ -24,4 +24,15 @@ res.render('home/about', { viewData: viewData });
 
 }
 
+static contact(req: Request, res: Response): void {
+
+const viewData: { [key: string]: any } = {};
+
+viewData["title"] = "Contact";
+
+
+res.render('home/contact', { viewData: viewData });
+
+}
+
 }
