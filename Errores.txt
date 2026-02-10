@@ -1,0 +1,33 @@
+Errores encontrados en el tutorial #2
+
+1. En Book.ts se tiene:
+    public Category: string
+    
+    pero en books.ejs y show.ejs se usa:
+    <%= book.category %>
+
+2. Category empieza en mayuscula, pero en js/ts no se debe usar PascalCase
+
+3. Se crea el archivo:
+    src/data/Books.ts
+    Se importa como:
+    import { books } from '../data/books.js';
+    Books no es lo mismo que books
+
+4. import { Book } from "../models/Book.js";
+    En TS puro no se importa con .js, salvo configuración específica.
+
+5. Mala práctica en TS
+    static Main_Point(req: Request, res: any)
+    static show(req: any, res: any)
+    Se pierde tipado, autocompletado y seguridad.
+
+6. Nombre del método: Main_Point
+    En JS/TS se usa camelCase
+
+7. Datos del libro se repiten en:
+    books.ejs
+    show.ejs
+
+8. No existe manejo de errores 404
+    Si el libro no existe crashea
