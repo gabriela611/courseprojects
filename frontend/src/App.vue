@@ -1,19 +1,15 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
   <div class="bg-gray-100 min-h-screen">
     <div class="flex h-screen overflow-hidden">
       <!-- sidebar -->
-      <aside
-        class="w-64 bg-gray-800 text-white shadow-lg fixed h-full flex flex-col"
-      >
+      <aside class="w-64 bg-gray-800 text-white shadow-lg fixed h-full flex flex-col">
         <div class="p-6 flex-1">
           <div class="flex items-center mb-8">
-            <i
-              class="fas fa-graduation-cap text-2xl mr-3 text-blue-400"
-            ></i>
+            <i class="fas fa-graduation-cap text-2xl mr-3 text-blue-400"></i>
             <span class="font-bold text-xl">Library Dashboard</span>
           </div>
 
@@ -34,11 +30,12 @@ import { RouterLink, RouterView } from 'vue-router'
               <span>About</span>
             </RouterLink>
 
-            <RouterLink 
-              to="/books" 
-              class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-700 transition duration-200" > 
-              <i class="fas fa-book mr-3"></i> 
-              <span>Books</span> 
+            <RouterLink
+              to="/books"
+              class="flex items-center px-4 py-3 rounded-lg hover:bg-gray-700 transition duration-200"
+            >
+              <i class="fas fa-book mr-3"></i>
+              <span>Books</span>
             </RouterLink>
 
             <RouterLink
@@ -53,9 +50,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
         <div class="w-full p-6 border-t border-gray-700 mt-auto">
           <div class="flex items-center">
-            <div
-              class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3"
-            >
+            <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3">
               <i class="fas fa-user text-white"></i>
             </div>
 

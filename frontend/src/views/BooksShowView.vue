@@ -18,8 +18,6 @@ function formatToCOP(price: number): string {
 
   return formatter.format(price).replace(/^\s*\$\s?/, '');
 }
-
-
 </script>
 
 <template>
@@ -30,8 +28,11 @@ function formatToCOP(price: number): string {
           <div class="bg-white rounded-lg shadow-md p-8 mb-8">
             <div class="flex items-start space-x-8">
               <div>
-                <img src="https://picsum.photos/seed/picsum/536/354" alt="Book Cover"
-                  class="object-cover rounded shadow-sm w-72 h-auto" />
+                <img
+                  src="https://picsum.photos/seed/picsum/536/354"
+                  alt="Book Cover"
+                  class="object-cover rounded shadow-sm w-72 h-auto"
+                />
               </div>
               <div>
                 <h2 class="text-2xl font-bold text-gray-800 mb-6">{{ book.title }}</h2>
